@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>Сборка скайрима</title>
+        <link rel="shortcut icon" href="https://g7.pngresmi.com/preview/1001/321/266/the-elder-scrolls-v-skyrim-dragonborn-oblivion-video-game-black-white-rift-others-thumbnail.jpg" />
+    </head>
+    <body>
+        <main>
+            <h1>Моды на Skyrim SE</h1>
+        </main>
+    </body>
+</html>
+
+<style>
+    body{
+        background-color: #80808070;
+    }
+    main{
+        background-color: white;
+        height: auto;
+        width: 84%;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 2%;
+        border-radius: 15px;
+        padding-right: 3%;
+        padding-left: 3%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+    }
+    main h1{
+        display: flex;
+        justify-content: center;
+    }
+    main .mod{
+        background-color: #8080802b;
+        border:1px solid #80808070;
+        display: flex;
+        border-radius: 15px;
+        overflow: hidden;
+        margin-bottom: 15px;
+    }
+    main .mod .ico{
+        margin-right: 30px;
+        width: 300px;
+        height: 300px;
+    }
+    main .mod .info .name p{
+        font-size: 20px;
+    }
+</style>
+
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+<script>
+    function AddMod(name = '',dics = '', link = '', ico = ''){
+        var elemDiv = document.createElement('div');
+        elemDiv.classList.add('mod');
+        elemDiv.innerHTML = `
+                <div class="ico">
+                    <img src="`+ ico +`" width="300px" height="300px"/>
+                </div>
+                <div class="info">
+                    <div class="name"><p>`+ name +`</p></div>
+                    <div class="disc"><p>`+ dics +`</p></div>
+                    <a href="`+ link +`">Ссылка</a>
+                </div>
+            `;
+        document.getElementsByTagName('main')[0].appendChild(elemDiv);
+    }
+    AddMod('RaceMenu','Улучшенный редактор персонажа','https://www.nexusmods.com/skyrimspecialedition/mods/19080','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/19080/29624-1533485825-2144769853.jpeg');
+    AddMod('Ryan Reos Dark Elf Blader - CBBE 3BA - TBD - BHUNP','Одежда мечницы','https://www.nexusmods.com/skyrimspecialedition/mods/54994','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/54994/54994-1646626298-644325641.png');
+    AddMod('Skip Bethesda Logo','Пропуск заставки при входе','https://www.nexusmods.com/skyrimspecialedition/mods/11698','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/83798-0-1494473209.jpg');
+    AddMod('XP32 Maximum Skeleton Special Extended - XPMSSE','Улучшенный скелет','https://www.nexusmods.com/skyrimspecialedition/mods/1988','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/1988/1988-1523998513-341582799.png');
+    AddMod('Fores New Idles in Skyrim SE - FNIS SE','Вспомогательное говно','https://www.nexusmods.com/skyrimspecialedition/mods/3038','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/11811-2-1364819541.jpg');
+    AddMod('CBPC - Physics with Collisions for SSE and VR','Физика груди','https://www.nexusmods.com/skyrimspecialedition/mods/21224','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/21224/21224-1542146879-1527686583.jpeg');
+    AddMod('FSMP - Faster HDT-SMP','Физика всего остального','https://www.nexusmods.com/skyrimspecialedition/mods/57339','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/57339/57339-1634898011-810844781.png');
+    AddMod('Caliente\'s Beautiful Bodies Enhancer -CBBE-','Обновленное женское тело','https://www.nexusmods.com/skyrimspecialedition/mods/198','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/198-7-1506556903.jpg');
+    AddMod('RaceMenu High Heels (Height Fixes)','Механика каблуков','https://www.nexusmods.com/skyrimspecialedition/mods/18045','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/18045/18045-1529259331-2034253059.jpeg');
+    AddMod('PapyrusUtil SE - Modders Scripting Utility Functions','Что-то для работы других модов','https://www.nexusmods.com/skyrimspecialedition/mods/13048','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/13048/13048-1512389090-2109546993.png');
+    AddMod('CBBE 3BA (3BBB)','Чуть больше тел','https://www.nexusmods.com/skyrimspecialedition/mods/30174','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/30174/30174-1645782289-1348110810.png');
+    AddMod('Alternate Conversation Camera','Улучшенная камера в диалогах','https://www.nexusmods.com/skyrimspecialedition/mods/21220','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/21220/21220-1542121006-1500934535.jpeg');
+    AddMod('SkyUI','Замена стандартного инвентаря','https://www.nexusmods.com/skyrimspecialedition/mods/12604','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/12604-1-1506820354.jpg');
+    AddMod('Convenient Dialogue UI - SE','Новое окно диалогов','https://www.nexusmods.com/skyrimspecialedition/mods/57943','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/57943/109655-1636099458-1448579232.jpeg');
+    AddMod('Capital Whiterun Expansion - Russian translation','Перевод для мода на улучшение Вайтруна','https://www.nexusmods.com/skyrimspecialedition/mods/38319?tab=files','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/38319/38319-1594829991-1865413388.jpeg');
+    AddMod('Capital Whiterun Expansion','Сам мод на обновление вайтрана','https://www.nexusmods.com/skyrimspecialedition/mods/37982','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/37982/37982-1593984381-1741719637.png');
+    AddMod('The Notice Board SE','Мод на доску объявлений','https://www.nexusmods.com/skyrimspecialedition/mods/3218','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/3218-1-1478467040.jpg');
+
+    AddMod('Address Library for SKSE Plugins','Библиотека для работы других модов','https://www.nexusmods.com/skyrimspecialedition/mods/32444','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/32444/32444-1581072939-1625378722.png');
+    AddMod('MCM Helper','Скрипты для работы модов','https://www.nexusmods.com/skyrimspecialedition/mods/53000','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/53000/53000-1627746793-1514379922.png');
+    AddMod('Project New Reign - Nemesis Unlimited Behavior Engine','Внедрятор новых анимаций','https://www.nexusmods.com/skyrimspecialedition/mods/60033','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/60033/87642-1639422463-1327059535.png');
+    AddMod('TrueHUD - HUD Additions','Имбовый новый хаб','https://www.nexusmods.com/skyrimspecialedition/mods/62775','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/62775/62775-1643737629-1125862080.png');
+    AddMod('TrueHUD - HUD Additions - RU','Руссификатор хаба','https://www.nexusmods.com/skyrimspecialedition/mods/63084','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/63084/63084-1644000092-958946764.jpeg');
+    AddMod('True Directional Movement - Modernized Third Person Gameplay','Апгрейд вида от 3 лица','https://www.nexusmods.com/skyrimspecialedition/mods/51614','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/51614/51614-1627839075-1842122342.gif');
+    AddMod('True Directional Movement - Modernized Third Person Gameplay Russian translation','Руссификатор апгрейда 3 лица','https://www.nexusmods.com/skyrimspecialedition/mods/53188','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/53188/53188-1627896740-1280655124.jpeg');
+    AddMod('SG Female Eyebrows','Мод на брови (хз вообще как это попало в сборку)','https://www.nexusmods.com/skyrimspecialedition/mods/25890','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/25890/25890-1558316887-2121482899.jpeg');
+    AddMod('The Eyes Of Beauty SSE','Нормальные глазки','https://www.nexusmods.com/skyrimspecialedition/mods/16185','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/16185/16185-1522479365-157782640.jpeg');
+    AddMod('High Poly Head SE','Больше полигонов в голове','','');
+    AddMod('Expressive Facial Animation -Female Edition-','Зубки','https://www.nexusmods.com/skyrimspecialedition/mods/19181','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/19181/19181-1542534574-1077375430.jpeg');
+    AddMod('Bijin Skin UNP and CBBE SE','Новая кожа для нового тела','https://www.nexusmods.com/skyrimspecialedition/mods/20078','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/20078/20078-1537524852-1968939955.jpeg');
+    AddMod('Expressive Facegen Morphs SE','Улучшение лиц','https://www.nexusmods.com/skyrimspecialedition/mods/35785','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/35785/102796-1589047768-1118577616.jpeg');
+    AddMod('KS Hairdos SSE','Причесоны','https://www.nexusmods.com/skyrimspecialedition/mods/6817','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/6817-4-1483126874.jpg');
+    AddMod('ConsoleUtilSSE','Еще скриптов, а то давно небыло','https://www.nexusmods.com/skyrimspecialedition/mods/24858','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/24858/24858-1554694981-1772203086.png');
+    AddMod('JContainers SE','И еще, что б прям вообще не скучно было','https://www.nexusmods.com/skyrimspecialedition/mods/16495','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/16495/16495-1523706323-318662486.png');
+    AddMod('powerofthree\'s Papyrus Extender','И снова скрипты','https://www.nexusmods.com/skyrimspecialedition/mods/22854','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/22854/95017-1548256254-1238854123.png');
+    AddMod('powerofthree\'s Tweaks','С.К.Р.И.П.Т.Ь.l.','https://www.nexusmods.com/skyrimspecialedition/mods/51073','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/51073/51073-1623688700-1006153578.png');
+    AddMod('UIExtensions','Вспомогательная штука','https://www.nexusmods.com/skyrimspecialedition/mods/17561','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/17561/57046-1527360501-8197968.jpeg');
+    AddMod('Leviathan Animations - Two-Handed High Stance','Новые анимации для 2ручника','https://www.nexusmods.com/skyrimspecialedition/mods/47092','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/47092/47092-1615918181-2125625736.png');
+    AddMod('Bijin Wives SE','Замена ванильных непесей','https://www.nexusmods.com/skyrimspecialedition/mods/11247','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/63473-4-1467948479.jpg');
+    AddMod('Bijin Warmaidens SE','Замена ванильных непесей','https://www.nexusmods.com/skyrimspecialedition/mods/1825','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/40038-0-1468104160.jpg');
+    AddMod('Bijin Wives SE - Russian Translation','Перевод','https://www.nexusmods.com/skyrimspecialedition/mods/60136','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/60136/60136-1639638855-1460468203.jpeg');
+    AddMod('Bijin Warmaidens SE - Russian Translation','Перевод','https://www.nexusmods.com/skyrimspecialedition/mods/60138','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/60138/60138-1639638592-2127407803.jpeg');
+    AddMod('Greybeard Clothing','Одежда сероводородных','https://www.nexusmods.com/skyrimspecialedition/mods/5829','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/5829-4-1481140689.png');
+    AddMod('Bijin NPCs SE - Russian Translation','Перевод','https://www.nexusmods.com/skyrimspecialedition/mods/60137','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/60137/60137-1639638138-464343288.jpeg');
+    AddMod('Bijin NPCs SE','Замена ванильных непесей','https://www.nexusmods.com/skyrimspecialedition/mods/11287','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/71054-0-1446369115.jpg');
+    AddMod('The Eyes Of Beauty - Vampire Eyes SSE','Вампирские глазки','https://www.nexusmods.com/skyrimspecialedition/mods/15910','https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/15910/15910-1521233663-1294083709.jpeg');
+</script>
